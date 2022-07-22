@@ -1,10 +1,18 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "build",
+    "site":"react-app-2cf42",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+        {
+            "source": "**",
+            "destination": "/index.html"
+        }
     ]
   }
 }
+
